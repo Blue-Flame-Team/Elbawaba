@@ -632,8 +632,6 @@ header {
 
 /* للأجهزة الصغيرة (موبايل كبير - أقل من 768px) */
 @media (max-width: 768px) {
-
-
   .logo-section {
       margin-left: 0;
   }
@@ -806,7 +804,6 @@ aspect-ratio: 7/3; /* يحافظ على نسبة العرض للطول */
     position: absolute;
     left: 0; right: 0; bottom: 0;
     width: 100%;
-    /* background: linear-gradient(90deg, rgba(0,178,178,0.8) 60%, rgba(0,178,178,0.15) 100%); */
     color: #fff;
     padding: 18px 20px 14px 18px;
     box-sizing: border-box;
@@ -1124,8 +1121,6 @@ header {
     text-align: center;
 }
 
-
-
 .dropdown > a {
     display: inline-flex;
     align-items: center;
@@ -1202,8 +1197,8 @@ header {
 /* للأجهزة الكبيرة (أقل من 1200px) */
 @media (max-width: 1200px) {
   .main-nav ul {
+      padding: 0 60px;
       gap: 100px;
-      padding: 0 80px;
   }
 
   .dropdown-content {
@@ -1213,8 +1208,6 @@ header {
 
 /* للأجهزة المتوسطة (تابلت - أقل من 992px) */
 @media (max-width: 992px) {
-
-
   .header-actions {
       gap: 6px;
       margin-right: 8px;
@@ -1260,8 +1253,6 @@ header {
 
 /* للأجهزة الصغيرة (موبايل كبير - أقل من 768px) */
 @media (max-width: 768px) {
-
-
   .header-actions {
       flex-direction: column;
       margin-top: 8px;
@@ -1774,18 +1765,37 @@ header {
   }
 }
 
-
 @media (max-width: 900px) {
-    .main-nav ul {
-        flex-direction: column;
-    }
+  .main-nav ul {
+      flex-direction: column;
+  }
+  .top-bar {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .hero-content h1 {
+      font-size: 2rem;
+  }
+  .hero-content p {
+      font-size: 1rem;
+  }
+  /* إخفاء التوب بار والناف بار فقط على الموبايل */
+  .top-bar,
+  .main-nav {
+      display: none !important;
+  }
+}
 
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .hero-content p {
-        font-size: 1rem;
-    }
+@media (min-width: 901px) {
+  .top-bar,
+  .main-nav {
+      display: flex !important;
+  }
+  .main-nav ul {
+      flex-direction: row;
+      gap: 173px;
+      padding: 0 120px;
+  }
 }
 
 .hero::before {
@@ -3659,4 +3669,5 @@ aspect-ratio: 7/3; /* يحافظ على نسبة العرض للطول */
     width: 90px;
     height: 3px;
   }
+}
 }
