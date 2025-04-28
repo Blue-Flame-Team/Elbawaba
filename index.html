@@ -19,41 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="overlay-modal" id="modalOverlay" tabindex="-1"></div>
-  <div class="bottom-sheet-modal" id="bottomSheetMenu" aria-label="القائمة المنبثقة" tabindex="-1">
-    <button class="bottom-sheet-close" aria-label="إغلاق القائمة">&times;</button>
-    <div class="bottom-sheet-profile">
-      <img src="assets/icons/user-avatar.svg" alt="صورة المستخدم" class="bottom-sheet-avatar" onerror="this.src='https://ui-avatars.com/api/?name=زائر&background=009fa4&color=fff&rounded=true'" />
-      <span class="bottom-sheet-username">مرحباً، زائر</span>
-    </div>
-    <div class="bottom-sheet-header">
-      <img src="assets/images/logo.png" alt="شعار محامو المملكة" class="logo">
-      <div class="logo-texts">
-        <span class="logo-title">محامو المملكة</span>
-        <span class="logo-sub">MOHAMOON KSA</span>
-        <span class="logo-desc">بوابتك القانونية الشاملة</span>
-      </div>
-    </div>
-    <ul class="bottom-sheet-nav">
-      <li><a href="#"><span class="bottom-sheet-svg-icon">🏠</span> الرئيسية</a></li>
-      <li><a href="#"><span class="bottom-sheet-svg-icon">ℹ️</span> نبذة عنا</a></li>
-      <li><a href="#"><span class="bottom-sheet-svg-icon">📜</span> سياساتنا</a></li>
-      <li><a href="#"><span class="bottom-sheet-svg-icon">📰</span> جريدة أم القرى</a></li>
-      <li><a href="#"><span class="bottom-sheet-svg-icon">🔗</span> خدمة الأسانيد</a></li>
-      <li><a href="#"><span class="bottom-sheet-svg-icon">📚</span> المكتبة القانونية</a></li>
-      <li><a href="#"><span class="bottom-sheet-svg-icon">💡</span> المستشار الذكي</a></li>
-      <li><a href="#"><span class="bottom-sheet-svg-icon">✉️</span> تواصل معنا</a></li>
-    </ul>
-    <div class="bottom-sheet-actions">
-      <button class="subscribe-btn">اشترك معنا</button>
-      <button class="login-btn">تسجيل الدخول</button>
-    </div>
-  </div>
-    <header>
+
+
+<header>
       <div class="top-bar">
-        <span class="side-menu-toggle" id="sideMenuToggle" style="display:inline-block;">
-          <img src="assets/icons/menu.png" alt="قائمة" style="width:32px;height:32px;cursor:pointer;" />
-        </span>
         <div class="logo-section">
           <img src="assets/images/logo.png" alt="شعار محامو المملكة" class="logo">
           <div class="logo-texts">
@@ -74,7 +43,7 @@
           <span class="icon"><img src="assets/icons/search.png" alt="بحث" style="width:24px;height:24px;object-fit:contain;"></span>
           <span class="icon"><img src="assets/icons/location.png" alt="موقع" style="width:24px;height:24px;object-fit:contain;"></span>
           <span class="icon"><img src="assets/icons/call.png" alt="هاتف" style="width:24px;height:24px;object-fit:contain;"></span>
-          <span class="icon" id="themeSettingsIcon" style="cursor:pointer;"><img src="assets/icons/setting-2.png" alt="إعدادات" style="width:24px;height:24px;object-fit:contain;"></span>
+          <span class="icon"><img src="assets/icons/setting-2.png" alt="إعدادات" style="width:24px;height:24px;object-fit:contain;"></span>
         </span>
   </div>
 </div>
@@ -337,82 +306,4 @@
 </body>
 </html>
 
-    <button class="bottom-sheet-close" aria-label="إغلاق القائمة">&times;</button>
-    <div class="bottom-sheet-profile">
-      <img src="assets/icons/user-avatar.svg" alt="صورة المستخدم" class="bottom-sheet-avatar" onerror="this.src='https://ui-avatars.com/api/?name=زائر&background=009fa4&color=fff&rounded=true'" />
-      <span class="bottom-sheet-username">مرحباً، زائر</span>
-    </div>
-    <div class="bottom-sheet-header">
-      <img src="assets/images/logo.png" alt="شعار محامو المملكة" class="logo">
-      <div class="logo-texts">
-        <span class="logo-title">محامو المملكة</span>
-        <span class="logo-sub">MOHAMOON KSA</span>
-        <span class="logo-desc">بوابتك القانونية الشاملة</span>
-      </div>
-    </div>
-    <ul class="bottom-sheet-nav">
-  <li><a href="#"><span class="bottom-sheet-svg-icon">🏠</span> الرئيسية</a></li>
-  <li><a href="#"><span class="bottom-sheet-svg-icon">ℹ️</span> نبذة عنا</a></li>
-  <li><a href="#"><span class="bottom-sheet-svg-icon">📜</span> سياساتنا</a></li>
-  <li><a href="#"><span class="bottom-sheet-svg-icon">📰</span> جريدة أم القرى</a></li>
-  <li><a href="#"><span class="bottom-sheet-svg-icon">🔗</span> خدمة الأسانيد</a></li>
-  <li><a href="#"><span class="bottom-sheet-svg-icon">📚</span> المكتبة القانونية</a></li>
-  <li><a href="#"><span class="bottom-sheet-svg-icon">💡</span> المستشار الذكي</a></li>
-  <li><a href="#"><span class="bottom-sheet-svg-icon">✉️</span> تواصل معنا</a></li>
-</ul>
-    <div class="bottom-sheet-actions">
-      <button class="subscribe-btn">اشترك معنا</button>
-      <button class="login-btn">تسجيل الدخول</button>
-    </div>
-  </div>
-  </nav>
-  <div id="sideMenuOverlay" style="display:none;"></div>
-  <div id="themeMenuModal" style="display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:9999;background:rgba(0,0,0,0.6);overflow:auto;direction:rtl;">
-    <div style="background:#fff;max-width:700px;margin:40px auto;padding:32px 24px;border-radius:18px;position:relative;box-shadow:0 2px 24px rgba(0,0,0,0.15);">
-      <button id="closeThemeMenuModal" style="position:absolute;top:18px;left:18px;font-size:2rem;background:none;border:none;cursor:pointer;">&times;</button>
-      <!-- محتوى الهيدر المطلوب -->
-      <div class="top-bar">
-        <div class="logo-section">
-          <img src="assets/images/logo.png" alt="شعار محامو المملكة" class="logo">
-          <div class="logo-texts">
-            <span class="logo-title">محامو المملكة</span>
-            <span class="logo-sub">MOHAMOON KSA</span>
-            <span class="logo-desc">بوابتك القانونية الشاملة</span>
-          </div>
-        </div>
-        <div class="topbar-spacer"></div>
-        <div class="faq-icons-group" style="display: flex; align-items: center; gap: 10px;">
-          <span class="faq-label"><img src="assets/icons/question.png" alt="سؤال" style="width:22px;height:22px;object-fit:contain;margin-left:7px;vertical-align:middle;">الأسئلة الشائعة</span>
-          <div class="header-icons">
-              <span class="icon-zoom-group">
-                  <span class="icon"><img src="assets/icons/search-zoom-out.png" alt="بحث متقدم" style="width:24px;height:24px;object-fit:contain;"></span>
-                  <span class="icon"><img src="assets/icons/search-zoom-in.png" alt="بحث متقدم" style="width:24px;height:24px;object-fit:contain;"></span>
-                </span>
-                <span class="icon-action-group">
-                  <span class="icon"><img src="assets/icons/search.png" alt="بحث" style="width:24px;height:24px;object-fit:contain;"></span>
-                  <span class="icon"><img src="assets/icons/location.png" alt="موقع" style="width:24px;height:24px;object-fit:contain;"></span>
-                  <span class="icon"><img src="assets/icons/call.png" alt="هاتف" style="width:24px;height:24px;object-fit:contain;"></span>
-                  <span class="icon"><img src="assets/icons/setting-2.png" alt="إعدادات" style="width:24px;height:24px;object-fit:contain;"></span>
-                </span>
-          </div>
-        </div>
-        <button class="subscribe-btn">اشترك معنا</button>
-        <button class="login-btn">تسجيل الدخول</button>
-      </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">الرئيسية</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">نبذة عنا <img src="assets/icons/Down.png" alt="▼" class="dropdown-toggle-arrow"></a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">سياساتنا <img src="assets/icons/Down.png" alt="▼" class="dropdown-toggle-arrow"></a>
-          </li>
-          <li><a href="#">جريدة أم القرى</a></li>
-          <li><a href="#">خدمة الأسانيد</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</body>
-</html>
+  
